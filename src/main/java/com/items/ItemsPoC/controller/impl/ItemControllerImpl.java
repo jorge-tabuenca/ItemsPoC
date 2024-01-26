@@ -1,7 +1,7 @@
 package com.items.ItemsPoC.controller.impl;
 
 import com.items.ItemsPoC.controller.ItemController;
-import com.items.ItemsPoC.dto.ItemDto;
+import com.items.ItemsPoC.dto.ItemDTO;
 import com.items.ItemsPoC.entity.ItemEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,7 +23,7 @@ public class ItemControllerImpl implements ItemController {
 
     @Override
     @PostMapping("/item")
-    public ItemEntity createItem(ItemDto itemDto) throws Exception {
+    public ItemEntity createItem(ItemDTO itemDto) throws Exception {
         return null;
     }
 }
