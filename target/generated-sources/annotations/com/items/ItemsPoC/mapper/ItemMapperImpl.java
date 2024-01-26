@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-01-26T18:23:46+0100",
+    date = "2024-01-26T19:39:57+0100",
     comments = "version: 1.5.3.Final, compiler: javac, environment: Java 17.0.10 (Oracle Corporation)"
 )
 @Component
@@ -22,5 +22,16 @@ public class ItemMapperImpl implements ItemMapper {
         ItemDTO itemDTO = new ItemDTO();
 
         return itemDTO;
+    }
+
+    @Override
+    public ItemEntity mapToItemDTO(ItemDTO itemDTO) {
+        if ( itemDTO == null ) {
+            return null;
+        }
+
+        ItemEntity itemEntity = new ItemEntity();
+
+        return itemEntity;
     }
 }
