@@ -13,10 +13,10 @@ public class ItemEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "ID", nullable = false)
+    @Column(name = "ID", nullable = false, unique = true)
     private short id;
 
-    @Column(name = "NAME", nullable = false)
+    @Column(name = "NAME", nullable = false, unique = true)
     private String name;
 
     @Column(name = "TYPE")
@@ -28,7 +28,7 @@ public class ItemEntity {
     @Column(name = "CAPACITY")
     private int capacity;
 
-    @Column(name = "FRIDGE")
+    @Column(name = "FRIDGE", columnDefinition = "TINYINT(1)")
     private boolean fridge;
 
     @Column(name = "DATE")
